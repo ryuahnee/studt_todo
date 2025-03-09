@@ -1,0 +1,64 @@
+# Gradle 관련 모든 파일
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+*.gradle
+gradle-app.setting
+gradle-wrapper.jar
+gradle-wrapper.properties
+.gradletasknamecache
+
+# 특히 Gradle 캐시 파일 명시적 제외
+**/gradle/wrapper/caches/
+**/gradle/wrapper/daemon/
+**/gradle-agent-instrumented.marker
+**/*.out.log
+
+# IntelliJ IDEA 관련
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.shelf/
+
+# Eclipse 관련
+.classpath
+.project
+.settings/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# VS Code 관련
+.vscode/
+
+# 로그 파일
+logs/
+*.log
+
+# 빌드 출력 디렉토리
+target/
+
+# 로컬 설정 파일
+application-local.yml
+application-local.properties
+application-dev.yml
+application-dev.properties
+
+# QueryDSL 생성 파일
+**/src/main/generated/
+
+# Mac OS 관련
+.DS_Store
+
+# 개인 환경 설정
+*.env
+
+# 기타 임시 파일
+*.tmp
+*.bak
+*.swp

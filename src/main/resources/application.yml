@@ -1,0 +1,17 @@
+studytodo:
+  site:
+    author: springRunner
+    description: What're your plans today?
+  data:
+    initialize: true
+
+spring:
+  application:
+    name: studytodo
+
+logging:
+  level:
+    '[todoapp]': debug
+    web: debug
+    sql: debug
+
