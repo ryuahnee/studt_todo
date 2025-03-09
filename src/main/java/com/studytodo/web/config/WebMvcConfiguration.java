@@ -4,7 +4,6 @@ import com.studytodo.web.support.servlet.view.CommaSeparatedValuesView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import com.studytodo.core.todo.domain.Todo;
-import com.studytodo.web.StudyTodoController;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.http.converter.HttpMessageConverter;

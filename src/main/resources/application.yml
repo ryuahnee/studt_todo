@@ -9,6 +9,16 @@ spring:
   application:
     name: studytodo
 
+  server:
+    error:
+      include-message: always
+      include-binding-errors: always
+    servlet:
+      encoding:
+        charset: utf-8
+        force: true
+
+
 logging:
   level:
     '[todoapp]': debug
