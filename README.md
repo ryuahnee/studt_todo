@@ -1,5 +1,4 @@
 <h1 align="center">Study Todo Application</h1>
-<p align="center"><em>스프링 웹 마스터 과정 복습 프로젝트</em></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Spring_Boot-3.4.1-6DB33F?style=for-the-badge&logo=spring-boot" alt="Spring Boot 3.4.1"/>
