@@ -1,5 +1,6 @@
 package com.studytodo.core.todo.domain;
 
+import com.studytodo.core.foundation.SystemException;
 import com.studytodo.core.shared.identifier.TodoId;
 
 /**
@@ -7,7 +8,7 @@ import com.studytodo.core.shared.identifier.TodoId;
  *
  * @author springrunner.kr@gmail.com
  */
-public class TodoNotFoundException extends TodoException {
+public class TodoNotFoundException extends SystemException {
 
     private final TodoId id;
 
@@ -20,4 +21,9 @@ public class TodoNotFoundException extends TodoException {
         return id;
     }
 
+
+    @Override
+    public Object[] getArguments() {
+        return new Object[]{id};
+    }
 }

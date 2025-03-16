@@ -1,7 +1,11 @@
 package com.studytodo.web.config;
 
+import com.studytodo.web.support.servlet.error.ReadableErrorAttributes;
 import com.studytodo.web.support.servlet.view.CommaSeparatedValuesView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.error.ErrorAttributes;
+import org.springframework.context.MessageSource;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.convert.converter.Converter;
 import com.studytodo.core.todo.domain.Todo;
 import org.springframework.context.annotation.Configuration;
@@ -29,6 +33,11 @@ class WebMvcConfiguration implements WebMvcConfigurer {
     public void configureViewResolvers(ViewResolverRegistry registry) {
         // registry.enableContentNegotiation();
         // 위와 같이 직접 설정하면, 스프링부트가 구성한 ContentNegotiatingViewResolver 전략이 무시된다.
+    }
+
+    @Bean
+    ErrorAttributes errorAttributes(MessageSource messageSource) {
+        return new ReadableErrorAttributes(messageSource);
     }
 
     @Override
